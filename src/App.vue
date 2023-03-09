@@ -2,7 +2,7 @@
     <div class="main">
         <Navbar />
         <Chats :chats="chats" :receive="receive" />
-        <Form message-sent="sendMessage" />
+        <Form @message-sent="sendMessage" />
         <Footer />
     </div>
 </template>
@@ -24,7 +24,7 @@ export default {
     data() {
         return {
             chats: [],
-            receive: [],
+            receive: [{id:1, msg: "hello"}],
             state: false,
         };
     },
@@ -34,7 +34,7 @@ export default {
             if (chats) {
                 const newChat = {
                     id: Math.floor((Math.random() * 19244727) / 10),
-                    msg: message,
+                    msg: chats.msg,
                 };
                 this.chats.push(newChat);
                 this.state = true;

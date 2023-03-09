@@ -1,13 +1,13 @@
 <template>
     <div class="chat">
         <div v-for="r in receive" :key="r.id" class="receive">
-            <img class="r-img" src="img/julien.jpg" alt="yoyoy" />
+            <img class="r-img" src="julien.jpg" alt="yoyoy" />
             <p class="r-p">{{ r.msg }}</p>
         </div>
 
         <div v-for="chat in chats" :key="chat.id" class="response">
             <p class="e-p">{{ chat.msg }}</p>
-            <img class="e-img" src="img/alison.jpg" alt="yoyoy" />
+            <img class="e-img" src="alison.jpg" alt="yoyoy" />
         </div>
     </div>
 </template>

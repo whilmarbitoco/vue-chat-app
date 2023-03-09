@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <p>2023 &copy; Alouh Sperk. All rights reserved.</p>
+        <p>2023 &copy; Whilmar Bitoco. All rights reserved.</p>
     </div>
 </template>
 
